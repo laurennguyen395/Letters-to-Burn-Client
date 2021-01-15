@@ -37,7 +37,7 @@ class Login extends Component {
         <h4>Let it all out</h4>
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Email</label>
+            <label htmlFor="email">Email</label>
             <input
               onChange={this.handleChange}
               type="email"

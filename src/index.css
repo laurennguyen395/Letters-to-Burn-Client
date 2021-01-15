@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -48,6 +52,9 @@ a {
   overflow: hidden;
   margin: 0;
 }
+.login-btn {
+  margin: 15px;
+}
 .form-group {
   display: flex;
   flex-direction: column;
@@ -58,12 +65,12 @@ a {
 }
 .register-link {
   background-color: rgba(249, 71, 66, 0.9);
-  height: 35px;
+  height: 40px;
   width: 100px;
   cursor: pointer;
   color: #fff;
   border: 0;
-  border-radius: 6px;
+  border-radius: 5px;
   padding: 8px 30px;
   margin: 5px;
   font-size: 22px;
@@ -71,5 +78,5 @@ a {
 .regP {
   display: flex;
   justify-content: center;
-  margin-top: 4px;
+  margin-top: -2px;
 }
