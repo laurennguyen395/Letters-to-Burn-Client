@@ -44,24 +44,24 @@ const Register = props => {
     Write it all out here..and then burn it. </h4>
       <form onSubmit={ handleSubmit }>
         <div className="form-group">
-          <label htmlFor="name">First Name:</label>
+          <label htmlFor="firstName">First Name:</label>
           <input className="RegInputBox"
             onChange={ handleFirstName } 
             value={ firstName }
             type="text" 
-            id="name" 
-            name="name" 
+            id="firstName" 
+            name="firstName" 
             required
           />
         </div>
         <div className="form-group">
-          <label htmlFor="name">Last Name:</label>
+          <label htmlFor="lastName">Last Name:</label>
           <input className="RegInputBox"
             onChange={ handleLastName } 
             value={ lastName }
             type="text" 
-            id="name" 
-            name="name" 
+            id="lastName" 
+            name="lastName" 
             required
           />
         </div>

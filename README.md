@@ -1,1 +1,0 @@
-Have you ever wanted to send an email. a text message, or a letter telling someone how you really feel? But..will that get you in trouble? Write how you feel about your boss, an ex, your mom, anyone who you have some words you'd like to get off your chest. And then burn it. Feel better about it and never have to worry about those words getting out.
