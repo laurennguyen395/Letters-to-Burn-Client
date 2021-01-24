@@ -17,7 +17,7 @@ class Login extends Component {
     event.preventDefault()
 
     UserModel.login(this.state)
-      .then(data => {
+      .then((data) => {
         console.log(data)
         // TODO: FIX IT
         if (!data.user) {
@@ -26,42 +26,50 @@ class Login extends Component {
         // storeUser is defined in the app component and passed to Login
         this.props.storeUser(data.user)
         // redirect the user to their profile
-        this.props.history.push('/profile')
+        this.props.history.push('/')
       })
-      .catch(err => console.log(err))
+      .catch((err) => console.log(err))
   }
 
-  
   render() {
     return (
-      <div>
-        <h4>Login</h4>
-        <form onSubmit={this.handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Email</label>
-            <input 
-              onChange={this.handleChange} 
-              type="email" 
-              id="email" 
-              name="email" 
-              value={this.state.email} />
-          </div>
+      <div className="hold">
+        <div className="container">
+          <h4>Let It Burn</h4>
+          <form onSubmit={this.handleSubmit}>
+            <div className="form-control">
+              <input
+                onChange={this.handleChange}
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                value={this.state.email}
+              />
+            </div>
 
-          <div className="form-group">
-            <label htmlFor="password">Password</label>
-            <input 
-              onChange={this.handleChange} 
-              type="password" 
-              id="password" 
-              name="password" 
-              value={this.state.password} />
-          
-          </div>
-          <button type="submit">Login</button>
-        </form>
+            <div className="form-control">
+              <input
+                onChange={this.handleChange}
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                value={this.state.password}
+              />
+            </div>
+            <button type="submit" className="login-btn">
+              Login
+            </button>
+
+            <p class="text">
+              Don't have an account? <a href="Register">Register</a>
+            </p>
+          </form>
+        </div>
       </div>
-    );
+    )
   }
 }
 
-export default Login;
+export default Login
